@@ -1,0 +1,74 @@
+#hero {
+  background: url("../assets/Background_Intro.png") no-repeat center/cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 163px 57px 163px;
+
+  #info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 680px;
+    margin-bottom: 80px;
+
+    #avatar-container {
+      position: relative;
+    }
+
+    #avatar {
+      width: 96px;
+      height: 96px;
+      border: 2px solid var(--red);
+      padding: 4.36px;
+      border-radius: 50%;
+      margin-top: 50px;
+      margin-bottom: 56px;
+    }
+
+    #avatar-decoration {
+      position: absolute;
+      top: 112px;
+      left: 66px;
+      z-index: 1;
+    }
+
+    h1 {
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      align-self: stretch;
+      text-align: center;
+    }
+  }
+
+  #stacks {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 94px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .tag {
+      display: flex;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background: var(--gray-300);
+      border-radius: 999px;
+    }
+  }
+
+  .tag-text {
+    font: var(--text-sm);
+    color: var(--gray-400);
+    margin: 0 8px;
+  }
+}
