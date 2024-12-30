@@ -59,6 +59,9 @@
 
     .contacts-item:hover {
       outline: 1.5px solid var(--blue);
+      & svg path {
+        fill: var(--blue);
+      }
     }
 
     .contacts-item:hover .ArrowUpRight {
