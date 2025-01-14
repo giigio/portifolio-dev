@@ -73,6 +73,7 @@ p {
 a {
   all: unset;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .accent {
