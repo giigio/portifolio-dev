@@ -21,14 +21,18 @@
   --font-family-inconsolata: "Inconsolata", serif;
   --font-family-maven-pro: "Maven Pro", serif;
 
-  --title-lg: 700 56px/120% var(--font-family-asap);
-  --title-md: 700 24px/120% var(--font-family-asap);
-  --title-sm: 700 16px/120% var(--font-family-asap);
+  --title-lg: 700 3.5rem/120% var(--font-family-asap);
+  --title-md: 700 1.5rem/120% var(--font-family-asap);
+  --title-sm: 700 1rem/120% var(--font-family-asap);
 
-  --subtitle: 400 20px/120% var(--font-family-inconsolata);
+  --subtitle: 400 1.25rem/120% var(--font-family-inconsolata);
 
-  --text-md: 400 16px/140% var(--font-family-maven-pro);
-  --text-sm: 400 14px/140% var(--font-family-maven-pro);
+  --text-md: 400 1rem/140% var(--font-family-maven-pro);
+  --text-sm: 400 0.875rem/140% var(--font-family-maven-pro);
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1 {
@@ -68,4 +72,18 @@ p {
 
 .accent {
   color: var(--red);
+}
+
+@media (width <=60em) {
+  h1,
+  h2,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+
+  h1 {
+    font: var(--title-md);
+  }
 }

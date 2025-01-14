@@ -2,7 +2,7 @@
   background: url("../assets/Background_Intro.png") no-repeat center/cover;
 
   display: flex;
-  padding: 128px 120px 200px 120px;
+  padding: 8rem 7.5rem 12.5rem 7.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,35 +12,35 @@
   }
 
   h4 {
-    margin: 8px 0;
+    margin: 0.5rem 0;
   }
 
   .contacts-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 48px;
+    gap: 1rem;
+    margin-top: 3rem;
 
     .contacts-item {
       display: flex;
-      width: 400px;
-      padding: 20px;
+      min-width: 25rem;
+      padding: 1.25rem;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      gap: 0.75rem;
 
-      border-radius: 8px;
+      border-radius: 0.5rem;
       background: var(--gray-300);
       transition: outline 0.5s ease, transform 0.5s ease; /* Add transition for smooth animation */
 
       .contact-icon {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 0.75rem;
 
         img {
-          width: 28px;
-          height: 28px;
+          width: 1.75rem;
+          height: 1.75rem;
         }
 
         h2 {
@@ -51,8 +51,8 @@
       .ArrowUpRight {
         background: url("../assets/icons/ArrowUpRight.svg") no-repeat
           center/cover;
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
         transition: background 0.5s ease; /* Add transition for smooth background change */
       }
     }
@@ -67,6 +67,17 @@
     .contacts-item:hover .ArrowUpRight {
       background: url("../assets/icons/ArrowUpRightHover.svg") no-repeat
         center/cover;
+    }
+  }
+}
+
+@media (width <=80em) {
+  #contacts {
+    padding: 3rem 1rem 3rem 1rem;
+    .contacts-container {
+      .contacts-item {
+        min-width: 17.5rem;
+      }
     }
   }
 }
